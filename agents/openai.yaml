@@ -1,0 +1,6 @@
+interface:
+  display_name: "题目迭代"
+  short_description: "以历史错题答案为起点叠加新逻辑，保留依赖与上下文，实测错误复现和传播"
+  default_prompt: "使用 $excel-question-iteration，先读取历史错题账本和当前Base，优先在已答错题目的答案上叠加新逻辑，让后续题依赖前序结果，保留必要空白与上下文，再实测、按冻结规则评分并保存下一轮底座。"
+policy:
+  allow_implicit_invocation: true
